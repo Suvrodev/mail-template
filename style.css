@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.socialMediaIcon {
+  width: 48px;
+  height: 48px;
+}
+
+/* Main Container */
+.mainContainer {
+  width: 1380px;
+  margin: 0 auto;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 0;
+}
+
+/* Container */
+.order-container {
+  width: 1271px;
+  max-width: 100%;
+  background: #fff;
+  color: #161616;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Header */
+.header {
+  background: #f9e5a7;
+  padding: 15px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logo {
+  width: 350px;
+  height: 85px;
+}
+
+.header-Ads {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.powered-by {
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.ondc-logo {
+  width: 203px;
+  height: 58px;
+}
+
+/* Order Details */
+
+/* Check this */
+.order-details {
+  padding: 40px 40px;
+}
+
+.order-details h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.order-details p {
+  margin: 20px 0;
+  font-size: 32px;
+}
+
+.brand {
+  color: #7a5542;
+}
+
+.hr {
+  border: 0;
+  border-bottom: 1px;
+  height: 1px;
+  /* background: #444; */
+  border: 1px dashed #444;
+  margin: 15px 0;
+}
+
+/* Order ID Link */
+.order-id {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.order-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.order-link:hover {
+  text-decoration: underline;
+}
+
+/* Table Wrapper for Responsiveness */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  margin: 15px 0;
+  border-collapse: collapse; /* Fixes double border issue */
+  border: 1px solid #444; /* Single border for the whole table */
+}
+
+/* Table Cells */
+table td,
+table th {
+  padding: 10px;
+  border: 1px solid #444; /* Apply single border to cells */
+}
+
+/* Keep Text Centered */
+.keepCenter {
+  text-align: center;
+}
+
+.total td {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Support */
+.support-text {
+  font-size: 32px;
+  margin-top: 10px 0;
+}
+
+/* Contact Email */
+.contact-email {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+  transition: 0.3s;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  overflow: auto;
+}
+.footerMeadia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.play-store img {
+  width: 150px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons svg {
+  font-size: 22px;
+  margin: 0 5px;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
+  color: #000;
+}
+
+.copyright {
+  margin-top: 60px;
+  font-size: 20px;
+  color: #777;
+}
+
+@media only screen and (max-width: 576px) {
+  .mainContainer {
+    width: 100%;
+    background-color: green;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 40px;
+  }
+
+  .header-Ads {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .powered-by {
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+  .ondc-logo {
+    width: 100px;
+    height: 20px;
+  }
+  .order-details {
+    padding: 15px;
+  }
+  .order-details h1 {
+    font-size: 20px;
+  }
+  .order-details p,
+  .support-text {
+    font-size: 16px;
+  }
+  .order-id {
+    font-size: 14px;
+    gap: 5px;
+    align-items: start;
+  }
+  .order-id h1 {
+    font-size: 14px;
+    width: 20%;
+  }
+  table {
+    font-size: 14px;
+  }
+  .playStore {
+    width: 120px !important;
+    height: 40px;
+  }
+  .socialMediaIcon {
+    width: 18px;
+    height: 18px;
+  }
+  .copyright {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
