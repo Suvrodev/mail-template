@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <!-- <meta charset="UTF-8" /> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Email Template</title>
 
@@ -86,7 +87,7 @@
 
       /* Check this */
       .order-details {
-        padding: 40px 40px;
+        padding: 38px 40px;
       }
 
       .order-details h1 {
@@ -94,7 +95,7 @@
         font-weight: 500;
       }
       .order-details p {
-        margin: 20px 0;
+        margin: 20px 0 38px 0;
         font-size: 32px;
       }
 
@@ -130,6 +131,7 @@
 
       /* Table Wrapper for Responsiveness */
       .table-responsive {
+        margin-top: 20px;
         width: 100%;
         overflow-x: auto;
       }
@@ -357,33 +359,29 @@
             <table>
               <tbody>
                 <tr>
-                  <td rowspan="2"><strong>Product</strong></td>
-                  <td rowspan="2"><strong>Unity Cost</strong></td>
-                  <td rowspan="2"><strong>Quantity</strong></td>
-                  <td colspan="3" class="keepCenter">
-                    <strong>Total Price</strong>
-                  </td>
+                  <td><b>Product</b></td>
+                  <td><b>Unity Cost</b></td>
+                  <td><b>Quantity</b></td>
+                  <td><b>Total Price</b></td>
                 </tr>
+
                 <tr>
-                  <td><strong>Sub Total</strong></td>
-                  <td><strong>Shipping Cost</strong></td>
-                  <td><strong>Total Order Amount</strong></td>
-                </tr>
-                <tr>
-                  <td>Delectable Chocolates: A Divine Treat</td>
+                  <td>Sub Total</td>
                   <td>₹90</td>
                   <td>2</td>
                   <td>₹180</td>
-                  <td>₹20</td>
-                  <td>₹200</td>
                 </tr>
                 <tr>
-                  <td>Delectable Chocolates: A Divine Treat</td>
+                  <td><b>Shiping Cost</b></td>
                   <td>₹90</td>
                   <td>2</td>
                   <td>₹180</td>
-                  <td>₹20</td>
-                  <td>₹200</td>
+                </tr>
+                <tr>
+                  <td><b>Total Order Amount</b></td>
+                  <td>₹90</td>
+                  <td>2</td>
+                  <td>₹180</td>
                 </tr>
               </tbody>
             </table>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .green {
+        background-color: green;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .socialMediaIcon {
+        width: 48px;
+        height: 48px;
+      }
+
+      .mainContainer {
+        width: 1380px;
+        margin: 0 auto;
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f4f4f4;
+        padding: 0;
+      }
+
+      .order-container {
+        width: 1271px;
+        max-width: 100%;
+        background: #fff;
+        color: #161616;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .header {
+        background: #f9e5a7;
+        padding: 15px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .logo {
+        width: 350px;
+        height: 85px;
+      }
+      .logoImageMobile {
+        display: none;
+      }
+
+      .header-Ads {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .powered-by {
+        font-size: 24px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+      }
+
+      .ondc-logo {
+        width: 203px;
+        height: 58px;
+      }
+
+      .order-details {
+        padding: 40px 40px;
+      }
+
+      .order-details h1 {
+        font-size: 40px;
+        font-weight: 500;
+      }
+      .order-details p {
+        margin: 20px 0;
+        font-size: 32px;
+      }
+
+      .brand {
+        color: #7a5542;
+      }
+
+      .hr {
+        border: 0;
+        border-bottom: 1px;
+        height: 1px;
+        border: 1px dashed #444;
+        margin: 15px 0;
+      }
+
+      .order-id {
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .order-link {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .order-link:hover {
+        text-decoration: underline;
+      }
+
+      .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+      }
+
+      .table-responsive table {
+        width: 100%;
+        margin: 15px 0;
+        border-collapse: collapse;
+        border: 1px solid #444;
+      }
+
+      .table-responsive table td,
+      .table-responsive table th {
+        padding: 10px;
+        border: 1px solid #444;
+      }
+
+      .keepCenter {
+        text-align: center;
+      }
+
+      .total td {
+        font-size: 16px;
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      .support-text {
+        font-size: 32px;
+        margin-top: 10px 0;
+      }
+
+      .contact-email {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bold;
+        color: #007bff;
+        transition: 0.3s;
+      }
+
+      .contact-email:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 40px;
+        overflow: auto;
+      }
+      .footerMeadia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .play-store img {
+        width: 150px;
+      }
+
+      .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .social-icons svg {
+        font-size: 22px;
+        margin: 0 5px;
+        color: #555;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .social-icons svg:hover {
+        color: #000;
+      }
+
+      .copyright {
+        margin-top: 60px;
+        font-size: 20px;
+        color: #777;
+      }
+
+      @media only screen and (max-width: 576px) {
+        .mainContainer {
+          width: 100%;
+          background-color: green;
+        }
+
+        .header {
+          padding: 10px;
+        }
+
+        .logo {
+          width: 100px;
+          height: 40px;
+        }
+        .logoImageDesktop {
+          display: none;
+        }
+        .logoImageMobile {
+          display: block;
+        }
+
+        .header-Ads {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
+
+        .powered-by {
+          font-size: 16px;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+        }
+        .ondc-logo {
+          width: 100px;
+          height: 20px;
+        }
+        .order-details {
+          padding: 15px;
+        }
+        .order-details h1 {
+          font-size: 20px;
+        }
+        .order-details p,
+        .support-text {
+          font-size: 16px;
+        }
+        .order-id {
+          font-size: 14px;
+          gap: 5px;
+          align-items: start;
+        }
+        .order-id h1 {
+          font-size: 14px;
+          width: 20%;
+        }
+        table {
+          font-size: 14px;
+        }
+        .playStore {
+          width: 120px !important;
+          height: 40px;
+        }
+        .socialMediaIcon {
+          width: 18px;
+          height: 18px;
+        }
+        .copyright {
+          font-size: 12px;
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      class="mainContainer bg-green-500"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td>
+          <table
+            class="order-container bg-yellow-400"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            width="100%"
+          >
+            <tr>
+              <td class="header">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <tr>
+                    <td class="logoImageDesktop">
+                      <h1>ok</h1>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="logoImageMobile">
+                      <h2>ok</h2>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="order-details">
+                <h1>
+                  Thank You for Your Order on
+                  <span class="brand">Sabhyasha.com</span>! 🎉
+                </h1>
+                <p>Your order has been confirmed. Details are below:</p>
+
+                <hr class="hr" />
+
+                <table
+                  class="order-id"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  width="100%"
+                >
+                  <tr>
+                    <td>
+                      <h1>Order ID:</h1>
+                    </td>
+                    <td>
+                      <a href="#" class="order-link"
+                        >ORD-14c84a26-a7bf-4fcc-ac68-4bd3fa07eb72</a
+                      >
+                    </td>
+                  </tr>
+                </table>
+
+                <table
+                  class="table-responsive"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  width="100%"
+                >
+                  <table
+                    class="myTable"
+                    cellpadding="0"
+                    cellspacing="0"
+                    border="0"
+                    width="100%"
+                  >
+                    <tbody>
+                      <tr>
+                        <td><b>Product</b></td>
+                        <td><b>Unity Cost</b></td>
+                        <td><b>Quantity</b></td>
+                        <td><b>Total Price</b></td>
+                      </tr>
+
+                      <tr>
+                        <td>Sub Total</td>
+                        <td>₹90</td>
+                        <td>2</td>
+                        <td>₹180</td>
+                        <td>₹20</td>
+                        <td>₹200</td>
+                      </tr>
+                      <tr>
+                        <td><b>Shiping Cost</b></td>
+                        <td>₹90</td>
+                        <td>2</td>
+                        <td>₹180</td>
+                        <td>₹20</td>
+                        <td>₹200</td>
+                      </tr>
+                      <tr>
+                        <td><b>Total Order Amount</b></td>
+                        <td>₹90</td>
+                        <td>2</td>
+                        <td>₹180</td>
+                        <td>₹20</td>
+                        <td>₹200</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </table>
+
+                <p class="support-text">
+                  If you have any questions, feel free to contact us.
+                </p>
+                <a href="mailto:care@sabhyasha.com" class="contact-email"
+                  >Care@sabhyasha.com</a
+                >
+
+                <table
+                  class="footer"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  width="100%"
+                >
+                  <tr>
+                    <td>
+                      <table
+                        class="footerMeadia"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td>
+                            <h1>Follow us</h1>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table
+                              class="social-icons"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              width="100%"
+                            >
+                              <tr>
+                                <td>
+                                  <img
+                                    src="assets/pinterest.svg"
+                                    alt=""
+                                    class="socialMediaIcon"
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    src="assets/facebook.svg"
+                                    alt=""
+                                    class="socialMediaIcon"
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    src="assets/linkdin.svg"
+                                    alt=""
+                                    class="socialMediaIcon"
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    src="assets/youtube.svg"
+                                    alt=""
+                                    class="socialMediaIcon"
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    src="assets/instagram.svg"
+                                    alt=""
+                                    class="socialMediaIcon"
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    src="assets/twitter.svg"
+                                    alt=""
+                                    class="socialMediaIcon"
+                                  />
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="copyright">
+                      © 2024 Artisans' Wizard - A Sabhyasha Retail Tech Product
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
